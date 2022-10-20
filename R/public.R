@@ -14,9 +14,7 @@ drg_boxplot <- function(varname, dataset="./DRG_data.csv") {
     geom_boxplot()
 }
 
-hello11 <- function(x) {
-  x+1
-}
+
 
 drg_med_stat <- function(stat_type, dataset="./DRG_data.csv") {
   data = read.csv(dataset)
