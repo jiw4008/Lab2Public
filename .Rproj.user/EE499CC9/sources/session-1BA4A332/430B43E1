@@ -1,27 +1,26 @@
 {
-    "id": "547944BF",
-    "path": "~/Desktop/DS1/Lab2Public/R/public.R",
-    "project_path": "R/public.R",
-    "type": "r_source",
+    "id": "430B43E1",
+    "path": "~/Desktop/hw6_JiaxuanWu.Rmd",
+    "project_path": null,
+    "type": "r_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1666233905970.0,
+    "created": 1666236412880.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
-        "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "7,6",
-        "scrollLine": "0"
+        "cursorPosition": "86,0",
+        "scrollLine": "68"
     },
     "folds": "",
-    "lastKnownWriteTime": 1666236304,
+    "lastKnownWriteTime": 1666236406,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1666236304289,
+    "last_content_update": 1666236406,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -1,0 +1,90 @@
+---
+title: "Homework 6"
+author: "Jiaxuan Wu"
+date: "Due 11:59pm on October 24, 2022"
+output: 
+  html_document:
+    
+    toc_depth: 1
+    
+    fig_height: 4.5
+    fig_width: 6
+  word_document:
+    toc: no
+  pdf_document: 
+    fig_height: 3.5
+    fig_width: 3.5
+    latex_engine: xelatex
+---
+
+```{r,echo=FALSE}
+knitr::opts_chunk$set(cache=TRUE, error=FALSE, message=FALSE, warning=FALSE,
+                      echo=T, tidy.opts=list(width.cutoff=60),tidy=TRUE)
+
+```
+
+```{r load packages}
+library("tidyverse")
+library("dplyr")
+library("boot")
+library("EnvStats")
+```
+```{r}
+options(scipen = 999)
+```
+
+
+Q1
+```{r}
+sampleList <- c(-68, -38, -32, -5, 92, -6, -58, -21, -41, -66)
+t.test(sampleList, alternative = "less", mu = 0)
+```
+Q2a
+```{r}
+B <- 10000
+n <- 10
+sampleBootT <- replicate(B, {
+  x <- sample(sampleList, size = n, replace=TRUE)
+  (mean(x)-0) / (sd(x)/sqrt(n))
+})
+```
+
+
+Q2b
+```{r}
+plot(density(sampleBootT), col = "blue", ylim=c(0, 0.4),
+     xlab = "Bootstrap Sample T-statistics", ylab = "Density", main = "Density Plot of Bootstrap Sample t-statistics")
+
+sampleT <- rt(10000, df=9)
+lines(density(sampleT), col="red", lwd=2)
+```
+
+
+Q2c
+No
+
+Q2d
+```{r}
+qqplot(sampleBootT, sampleT)
+qqline(sampleT)
+```
+
+
+Q2e
+No
+
+
+Q2f
+```{r}
+t.test(sampleBootT, alternative = "less", mu = 0, conf.level = 0.95)
+```
+
+Q2g
+Yes
+
+```{r}
+devtools::install_github('jiw4008/Lab2Public')
+try(3)
+```
+
+

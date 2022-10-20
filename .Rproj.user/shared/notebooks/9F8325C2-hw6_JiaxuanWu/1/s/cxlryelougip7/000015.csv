@@ -1,0 +1,5 @@
+"0","devtools::install_github('jiw4008/Lab2Public')
+"
+"2","Skipping install of 'Lab2Public' from a github remote, the SHA1 (e13bcedc) has not changed since last install.
+  Use `force = TRUE` to force installation
+"

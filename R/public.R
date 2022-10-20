@@ -5,7 +5,7 @@ library("devtools")
 library("roxygen2")
 
 
-try <- function(x) {
+tryss <- function(x) {
   x+1
 }
 
