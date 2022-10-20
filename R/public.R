@@ -14,6 +14,12 @@ drg_boxplot <- function(varname, dataset="./DRG_data.csv") {
     geom_boxplot()
 }
 
+#' Title
+#'
+#' @return 11
+#' @export
+#'
+#' @examples 122
 try00 <- function() {
   11
 }
